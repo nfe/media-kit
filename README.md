@@ -44,4 +44,10 @@ Bem-vindo ao nosso Media Kit! Aqui você pode baixar os arquivos do manual de id
 | AI      | [Elementos da Marca (AI)](elementos-da-marca/elementos-da-marca.ai) |
 | EPS     | [Elementos da Marca (EPS)](elementos-da-marca/elementos-da-marca.eps) |
 
+## Download do Repositório
+
+Você pode baixar o repositório completo como um arquivo zip através do link abaixo:
+
+[Baixar Repositório (ZIP)](https://github.com/nfe/media-kit/archive/refs/heads/main.zip)
+
 Aproveite os recursos e sinta-se à vontade para baixar o que precisar!
