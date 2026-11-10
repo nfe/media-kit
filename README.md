@@ -7,6 +7,7 @@ Arquivos do sistema de identidade visual da NFE.io. Fonte: Manual de Identidade 
 | Formato | Link |
 |---------|------|
 | PDF     | <a href="manual-de-identidade-visual/manual-de-identidade-visual.pdf" download target="_blank">Manual de Identidade Visual (PDF)</a> |
+| PDF     | <a href="manual-de-identidade-visual/design-system.pdf" download target="_blank">Design System (PDF)</a> |
 
 
 ## [Elementos da Marca](elementos-da-marca/README.md)
