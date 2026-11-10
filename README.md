@@ -18,7 +18,6 @@ Arquivos do sistema de identidade visual da NFE.io. Fonte: Manual de Identidade 
 |---------|---------|------|
 | ![Logo Branco Transparente (Email)](elementos-da-marca/logos/logo-branco-transparente-vemail.png) | PNG | <a href="elementos-da-marca/logos/logo-branco-transparente-vemail.png" download target="_blank">Logo Branco Transparente (Email)</a> |
 | ![Logo Branco Transparente](elementos-da-marca/logos/logo-branco-transparente.png) | PNG | <a href="elementos-da-marca/logos/logo-branco-transparente.png" download target="_blank">Logo Branco Transparente</a> |
-| ![Logo BW Tiny Quadrado Fundo Branco](elementos-da-marca/logos/logo-bw-tiny-quadrado-fundo-branco.jpg) | JPG | <a href="elementos-da-marca/logos/logo-bw-tiny-quadrado-fundo-branco.jpg" download target="_blank">Logo BW Tiny Quadrado Fundo Branco</a> |
 | ![Logo Colorido Fundo Transparente](elementos-da-marca/logos/logo-colorido-fundo-transparente.png) | PNG | <a href="elementos-da-marca/logos/logo-colorido-fundo-transparente.png" download target="_blank">Logo Colorido Fundo Transparente</a> |
 | ![Logo Quadrado Branco Transparente (SVG)](elementos-da-marca/logos/logo-quadrado-branco-transparente.svg) | SVG | <a href="elementos-da-marca/logos/logo-quadrado-branco-transparente.svg" download target="_blank">Logo Quadrado Branco Transparente (SVG)</a> |
 | ![Logo Quadrado Fundo Branco](elementos-da-marca/logos/logo-quadrado-fundo-branco.jpg) | JPG | <a href="elementos-da-marca/logos/logo-quadrado-fundo-branco.jpg" download target="_blank">Logo Quadrado Fundo Branco</a> |
