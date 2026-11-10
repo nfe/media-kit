@@ -41,8 +41,8 @@ Arquivos do sistema de identidade visual da NFE.io. Fonte: Manual de Identidade 
 
 | Arquivo | Descrição |
 |---------|-----------|
-| `elementos-da-marca/styles.css` | Tokens de cor (tema claro e escuro), tipografia responsiva, espaçamento, raio, sombra, layout e componentes |
-| `elementos-da-marca/wave-pattern.png` | Malha da marca no degradê (PNG transparente, 2519 px) |
+| <a href="elementos-da-marca/styles.css" download target="_blank">`elementos-da-marca/styles.css`</a> | Tokens de cor (tema claro e escuro), tipografia responsiva, espaçamento, raio, sombra, layout e componentes |
+| <a href="elementos-da-marca/wave-pattern.png" download target="_blank">`elementos-da-marca/wave-pattern.png`</a> | Malha da marca no degradê (PNG transparente, 2519 px) |
 
 #### Favicon
 
