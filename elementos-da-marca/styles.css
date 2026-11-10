@@ -1,0 +1,630 @@
+/* ==========================================================================
+   NFE.io · Design System · styles.css
+   Versão 1.2 · novembro de 2026 · alinhado ao Manual de Identidade Visual v3.0
+   Fonte: arquivo Figma "Manual de Identidade Visual NFE.io — v2 (2026)",
+   páginas 01 (Manual) e 02 (Design System · Web).
+
+   Conteúdo
+   01. Fontes
+   02. Primitivos de cor
+   03. Tokens semânticos (tema claro e escuro)
+   04. Tipografia
+   05. Espaço, raio, sombra e layout
+   06. Base
+   07. Utilitários de tipografia
+   08. Componentes: botão, campo, checkbox, badge, alerta, card, métrica,
+       sobretítulo, malha, logotipo
+   09. Acessibilidade
+   ========================================================================== */
+
+/* 01. Fontes ------------------------------------------------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=Inter:wght@400;600&family=JetBrains+Mono:wght@400;600&display=swap");
+
+/* 02. Primitivos de cor --------------------------------------------------
+   Guardam os valores. Componentes e páginas usam só os tokens semânticos. */
+:root {
+  /* Cyan */
+  --nfe-cyan-50: #ecf9fd;
+  --nfe-cyan-100: #d9f3fc;
+  --nfe-cyan-200: #b2e7f8;
+  --nfe-cyan-300: #79d5f3;
+  --nfe-cyan-400: #3fc3ee; /* Cyan (manual) */
+  --nfe-cyan-500: #1fa7d4; /* Cyan escuro (manual) */
+  --nfe-cyan-600: #2c88a7;
+  --nfe-cyan-700: #236b83;
+  --nfe-cyan-800: #194e5f;
+  --nfe-cyan-destaque: #0096bf;       /* destaque em texto grande sobre claro · 3,4:1 */
+  --nfe-cyan-destaque-texto: #00769a; /* links e texto pequeno sobre claro · 5,2:1 */
+
+  /* Teal */
+  --nfe-teal-50: #effbf6;
+  --nfe-teal-100: #dff6ed;
+  --nfe-teal-200: #beeddb;
+  --nfe-teal-300: #8ee0c0;
+  --nfe-teal-400: #5dd3a5; /* Teal (manual) */
+  --nfe-teal-500: #4fb38c;
+  --nfe-teal-600: #419474;
+  --nfe-teal-700: #33745b;
+  --nfe-teal-800: #255442;
+
+  /* Verde */
+  --nfe-verde-50: #f2fcee;
+  --nfe-verde-100: #e5f9de;
+  --nfe-verde-200: #cbf3bc;
+  --nfe-verde-300: #a4ea8a;
+  --nfe-verde-400: #7de158; /* Verde (manual) · CTA */
+  --nfe-verde-500: #57c436; /* Sucesso (manual) */
+  --nfe-verde-600: #589d3e;
+  --nfe-verde-700: #457c30;
+  --nfe-verde-800: #325a23;
+  --nfe-verde-destaque: #3a9c12;       /* destaque em texto grande sobre claro · 3,5:1 */
+  --nfe-verde-destaque-texto: #2b7e10; /* texto pequeno sobre claro · 5,1:1 */
+
+  /* Vermelho */
+  --nfe-vermelho-50: #fceeed;
+  --nfe-vermelho-100: #fadddc;
+  --nfe-vermelho-200: #f5bbb8;
+  --nfe-vermelho-300: #ed8983;
+  --nfe-vermelho-400: #e96f69;
+  --nfe-vermelho-500: #e5564e; /* Erro (manual) */
+  --nfe-vermelho-600: #a03c37;
+  --nfe-vermelho-700: #7e2f2b;
+  --nfe-vermelho-800: #5c221f;
+
+  /* Neutro */
+  --nfe-neutro-0: #ffffff;   /* Branco (manual) */
+  --nfe-neutro-25: #f7fafb;  /* Off-white (manual) */
+  --nfe-neutro-50: #eef3f5;
+  --nfe-neutro-100: #e1e9ed;
+  --nfe-neutro-200: #c7d4db;
+  --nfe-neutro-300: #9fb2bd;
+  --nfe-neutro-400: #74899a;
+  --nfe-neutro-450: #5b7083;
+  --nfe-neutro-500: #4a6478; /* Tinta média (manual) */
+  --nfe-neutro-600: #34495a;
+  --nfe-neutro-700: #1f3240;
+  --nfe-neutro-900: #0b1a26; /* Tinta (manual) */
+
+  /* Petróleo */
+  --nfe-petroleo-500: #1a5a68;
+  --nfe-petroleo-600: #124b58;
+  --nfe-petroleo-700: #0c3b47; /* Teal base (manual) */
+  --nfe-petroleo-800: #08303c;
+  --nfe-petroleo-900: #062632; /* Teal profundo (manual) */
+
+  /* Degradê oficial do logotipo: uso exclusivo do logotipo, do símbolo e da malha. */
+  --nfe-gradient: linear-gradient(106deg, #5dd0f2 0%, #7aea53 100%);
+}
+
+/* 03. Tokens semânticos ---------------------------------------------------
+   Tema claro é o padrão. Para uma seção escura, use data-theme="dark"
+   no elemento da seção (ou no <html> para a página inteira). */
+:root,
+[data-theme="light"] {
+  --nfe-bg-canvas: var(--nfe-neutro-0);
+  --nfe-bg-surface: var(--nfe-neutro-25);
+  --nfe-bg-subtle: var(--nfe-neutro-50);
+  --nfe-bg-raised: var(--nfe-neutro-0);
+
+  --nfe-text-primary: var(--nfe-neutro-900);
+  --nfe-text-secondary: var(--nfe-neutro-500);
+  --nfe-text-muted: var(--nfe-neutro-450);
+  --nfe-text-accent: var(--nfe-cyan-destaque-texto);
+  --nfe-text-emphasis: var(--nfe-verde-destaque-texto);
+  --nfe-text-link: var(--nfe-cyan-destaque-texto);
+  --nfe-text-link-hover: var(--nfe-cyan-800);
+  --nfe-text-on-action: var(--nfe-neutro-900);
+  --nfe-text-on-action-strong: var(--nfe-neutro-0);
+
+  --nfe-highlight-primary: var(--nfe-verde-destaque);
+  --nfe-highlight-secondary: var(--nfe-cyan-destaque);
+
+  --nfe-border-default: var(--nfe-neutro-100);
+  --nfe-border-strong: var(--nfe-neutro-200);
+  --nfe-border-control: var(--nfe-neutro-400);
+
+  --nfe-action-primary: var(--nfe-verde-400);
+  --nfe-action-primary-hover: var(--nfe-verde-500);
+  --nfe-action-primary-pressed: var(--nfe-verde-700);
+  --nfe-action-accent: var(--nfe-cyan-400);
+  --nfe-action-accent-hover: var(--nfe-cyan-500);
+  --nfe-action-accent-pressed: var(--nfe-cyan-destaque-texto);
+  --nfe-action-secondary: var(--nfe-neutro-900);
+  --nfe-action-secondary-text: var(--nfe-neutro-0);
+  --nfe-action-secondary-hover: var(--nfe-neutro-700);
+  --nfe-action-secondary-pressed: var(--nfe-neutro-600);
+  --nfe-action-disabled: var(--nfe-neutro-100);
+  --nfe-action-disabled-text: var(--nfe-neutro-500);
+
+  --nfe-focus-ring: var(--nfe-cyan-700);
+
+  --nfe-feedback-success: var(--nfe-verde-600);
+  --nfe-feedback-success-bg: var(--nfe-verde-50);
+  --nfe-feedback-success-text: var(--nfe-verde-700);
+  --nfe-feedback-error: var(--nfe-vermelho-500);
+  --nfe-feedback-error-bg: var(--nfe-vermelho-50);
+  --nfe-feedback-error-text: var(--nfe-vermelho-600);
+
+  --nfe-brand-cyan: var(--nfe-cyan-400);
+  --nfe-brand-teal: var(--nfe-teal-400);
+  --nfe-brand-verde: var(--nfe-verde-400);
+
+  --nfe-mesh-opacity: 0.2; /* malha em fundo claro: 20% */
+  color-scheme: light;
+}
+
+[data-theme="dark"] {
+  --nfe-bg-canvas: var(--nfe-petroleo-900);
+  --nfe-bg-surface: var(--nfe-petroleo-700);
+  --nfe-bg-subtle: var(--nfe-petroleo-800);
+  --nfe-bg-raised: var(--nfe-petroleo-600);
+
+  --nfe-text-primary: var(--nfe-neutro-0);
+  --nfe-text-secondary: var(--nfe-neutro-200);
+  --nfe-text-muted: var(--nfe-neutro-200);
+  --nfe-text-accent: var(--nfe-verde-400);
+  --nfe-text-emphasis: var(--nfe-verde-400);
+  --nfe-text-link: var(--nfe-cyan-300);
+  --nfe-text-link-hover: var(--nfe-neutro-0);
+  --nfe-text-on-action: var(--nfe-neutro-900);
+  --nfe-text-on-action-strong: var(--nfe-neutro-0);
+
+  --nfe-highlight-primary: var(--nfe-verde-400);
+  --nfe-highlight-secondary: var(--nfe-cyan-400);
+
+  --nfe-border-default: var(--nfe-petroleo-600);
+  --nfe-border-strong: var(--nfe-petroleo-500);
+  --nfe-border-control: var(--nfe-neutro-300);
+
+  --nfe-action-secondary: var(--nfe-neutro-0);
+  --nfe-action-secondary-text: var(--nfe-neutro-900);
+  --nfe-action-secondary-hover: var(--nfe-neutro-100);
+  --nfe-action-secondary-pressed: var(--nfe-neutro-200);
+  --nfe-action-disabled: var(--nfe-petroleo-700);
+  --nfe-action-disabled-text: var(--nfe-neutro-200);
+
+  --nfe-focus-ring: var(--nfe-cyan-400);
+
+  --nfe-feedback-success: var(--nfe-verde-400);
+  --nfe-feedback-success-bg: var(--nfe-petroleo-800);
+  --nfe-feedback-success-text: var(--nfe-verde-300);
+  --nfe-feedback-error: var(--nfe-vermelho-400);
+  --nfe-feedback-error-bg: var(--nfe-petroleo-800);
+  --nfe-feedback-error-text: var(--nfe-vermelho-300);
+
+  --nfe-mesh-opacity: 0.3; /* malha em fundo escuro: 30% (capa e contracapa: 42%) */
+  color-scheme: dark;
+}
+
+/* 04. Tipografia ----------------------------------------------------------
+   Archivo: títulos, números de destaque, corpo e CTAs.
+   Inter: rótulos técnicos, tabelas e legendas.
+   JetBrains Mono: chaves, códigos, valores e tokens. */
+:root {
+  --nfe-font-display: "Archivo", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --nfe-font-body: "Archivo", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --nfe-font-secondary: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --nfe-font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  --nfe-weight-regular: 400;
+  --nfe-weight-semibold: 600;
+  --nfe-weight-bold: 700;
+
+  /* Escala desktop (≥ 1024 px) */
+  --type-display-xl: 700 128px/0.94 var(--nfe-font-display);
+  --type-display: 700 72px/1.05 var(--nfe-font-display);
+  --type-h1: 700 56px/1.1 var(--nfe-font-display);
+  --type-h2: 600 44px/1.15 var(--nfe-font-display);
+  --type-h3: 600 32px/1.2 var(--nfe-font-display);
+  --type-h4: 600 24px/1.3 var(--nfe-font-display);
+  --type-body-l: 400 20px/1.55 var(--nfe-font-body);
+  --type-body: 400 18px/1.55 var(--nfe-font-body);
+  --type-body-s: 400 16px/1.5 var(--nfe-font-body);
+
+  --tracking-display-xl: -5.5px;
+  --tracking-display: -2px;
+  --tracking-h1: -1.5px;
+  --tracking-h2: -1px;
+  --tracking-h3: -0.5px;
+
+  /* Interface */
+  --type-button-l: 700 16px/1 var(--nfe-font-display);
+  --type-button-m: 700 14px/1 var(--nfe-font-display);
+  --type-link-l: 600 18px/1.3 var(--nfe-font-display);
+  --type-link-m: 600 16px/1.3 var(--nfe-font-display);
+  --type-label: 600 14px/1.3 var(--nfe-font-secondary);
+  --type-input: 400 16px/1.4 var(--nfe-font-secondary);
+  --type-overline: 600 13px/1.3 var(--nfe-font-secondary);
+  --type-caption: 400 13px/1.4 var(--nfe-font-secondary);
+  --type-mono: 400 14px/1.4 var(--nfe-font-mono);
+}
+
+/* Tablet (768–1023 px) */
+@media (max-width: 1023px) {
+  :root {
+    --type-display: 700 56px/1.06 var(--nfe-font-display);
+    --type-h1: 700 44px/1.1 var(--nfe-font-display);
+    --type-h2: 600 36px/1.16 var(--nfe-font-display);
+    --type-h3: 600 28px/1.22 var(--nfe-font-display);
+    --type-h4: 600 22px/1.3 var(--nfe-font-display);
+    --type-body-l: 400 18px/1.55 var(--nfe-font-body);
+    --type-body: 400 17px/1.55 var(--nfe-font-body);
+    --type-body-s: 400 15px/1.5 var(--nfe-font-body);
+    --type-display-xl: var(--type-display); /* Display XL só existe no desktop */
+    --tracking-display: -1.5px;
+    --tracking-h1: -1px;
+    --tracking-h2: -0.75px;
+    --tracking-h3: -0.25px;
+    --tracking-display-xl: var(--tracking-display);
+  }
+}
+
+/* Mobile (< 768 px) */
+@media (max-width: 767px) {
+  :root {
+    --type-display: 700 44px/1.08 var(--nfe-font-display);
+    --type-h1: 700 36px/1.12 var(--nfe-font-display);
+    --type-h2: 600 30px/1.18 var(--nfe-font-display);
+    --type-h3: 600 24px/1.25 var(--nfe-font-display);
+    --type-h4: 600 20px/1.3 var(--nfe-font-display);
+    --type-body-l: 400 18px/1.55 var(--nfe-font-body);
+    --type-body: 400 16px/1.55 var(--nfe-font-body);
+    --type-body-s: 400 14px/1.5 var(--nfe-font-body);
+    --type-display-xl: var(--type-display);
+    --tracking-display: -1px;
+    --tracking-h1: -0.8px;
+    --tracking-h2: -0.5px;
+    --tracking-h3: 0;
+    --tracking-display-xl: var(--tracking-display);
+  }
+}
+
+/* 05. Espaço, raio, sombra e layout --------------------------------------- */
+:root {
+  /* Base 4 */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
+  --space-30: 120px;
+  --space-32: 128px;
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 999px;
+
+  /* Sombras frias, puxadas para o teal profundo */
+  --shadow-sm: 0 1px 3px rgba(6, 38, 50, 0.08), 0 1px 2px rgba(6, 38, 50, 0.04);
+  --shadow-md: 0 8px 24px rgba(6, 38, 50, 0.1);
+  --shadow-lg: 0 24px 48px rgba(6, 38, 50, 0.14);
+  --glass-blur: 24px;
+
+  /* Layout */
+  --container: 1200px;
+  --margin: max(40px, calc((100vw - 1200px) / 2)); /* 120 px em 1440 */
+  --gutter: 24px;
+  --section-y: var(--space-30);
+}
+@media (max-width: 1023px) {
+  :root { --margin: 40px; --gutter: 20px; --section-y: var(--space-24); }
+}
+@media (max-width: 767px) {
+  :root { --margin: 24px; --gutter: 16px; --section-y: var(--space-16); }
+}
+
+/* 06. Base ----------------------------------------------------------------- */
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  font: var(--type-body);
+  color: var(--nfe-text-primary);
+  background: var(--nfe-bg-canvas);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+[data-theme] { color: var(--nfe-text-primary); background-color: var(--nfe-bg-canvas); }
+
+img, svg { max-width: 100%; display: block; }
+
+a { color: var(--nfe-text-link); text-underline-offset: 3px; }
+a:hover { color: var(--nfe-text-link-hover); }
+
+h1, h2, h3, h4, p { margin: 0; }
+
+.container {
+  width: 100%;
+  max-width: calc(var(--container) + 80px);
+  margin-inline: auto;
+  padding-inline: 40px;
+}
+@media (max-width: 1023px) { .container { padding-inline: var(--margin); } }
+@media (max-width: 359px) { :root { --margin: 20px; } }
+
+.section { position: relative; padding-block: var(--section-y); overflow: hidden; }
+
+/* 07. Utilitários de tipografia ------------------------------------------ */
+.t-display-xl { font: var(--type-display-xl); letter-spacing: var(--tracking-display-xl); }
+.t-display { font: var(--type-display); letter-spacing: var(--tracking-display); }
+.t-h1 { font: var(--type-h1); letter-spacing: var(--tracking-h1); }
+.t-h2 { font: var(--type-h2); letter-spacing: var(--tracking-h2); }
+.t-h3 { font: var(--type-h3); letter-spacing: var(--tracking-h3); }
+.t-h4 { font: var(--type-h4); }
+.t-body-l { font: var(--type-body-l); }
+.t-body { font: var(--type-body); }
+.t-body-s { font: var(--type-body-s); }
+.t-label { font: var(--type-label); }
+.t-caption { font: var(--type-caption); color: var(--nfe-text-muted); }
+.t-mono { font: var(--type-mono); }
+.t-overline { font: var(--type-overline); letter-spacing: 0.12em; text-transform: uppercase; color: var(--nfe-text-emphasis); }
+
+.text-secondary { color: var(--nfe-text-secondary); }
+.text-muted { color: var(--nfe-text-muted); }
+.text-emphasis { color: var(--nfe-text-emphasis); }
+.highlight { color: var(--nfe-highlight-primary); }        /* palavra em destaque · só texto ≥ 24 px ou ≥ 18,66 px em negrito (WCAG) */
+.highlight-alt { color: var(--nfe-highlight-secondary); }  /* segundo destaque · mesma regra de tamanho */
+
+/* Evita palavra sozinha na última linha (navegadores com suporte) */
+.t-display-xl, .t-display, .t-h1, .t-h2, .t-h3, .t-h4 { text-wrap: balance; }
+.t-body-l, .t-body, .t-body-s { text-wrap: pretty; }
+
+/* 08. Componentes ---------------------------------------------------------- */
+
+/* Botão ------------------------------------------------------------------
+   Primário (verde, ação principal, um por seção) · Destaque (azul) ·
+   Secundário · Contorno · Link. Tamanhos L (hero, CTA final) e M (cards, header).
+   CTA em Archivo Bold, caixa alta, +4%. Link em capitalização de frase. */
+.btn {
+  --btn-bg: var(--nfe-action-primary);
+  --btn-fg: var(--nfe-text-on-action);
+  --btn-border: transparent;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-3);
+  min-height: 52px;
+  padding: var(--space-4) var(--space-8);
+  border: 1px solid var(--btn-border);
+  border-radius: var(--radius-md);
+  background: var(--btn-bg);
+  color: var(--btn-fg);
+  font: var(--type-button-l);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+}
+.btn:hover { --btn-bg: var(--nfe-action-primary-hover); color: var(--btn-fg); }
+.btn:active { --btn-bg: var(--nfe-action-primary-pressed); --btn-fg: var(--nfe-text-on-action-strong); }
+
+.btn--m { min-height: 40px; padding: var(--space-3) var(--space-6); font: var(--type-button-m); letter-spacing: 0.04em; }
+
+.btn--accent { --btn-bg: var(--nfe-action-accent); }
+.btn--accent:hover { --btn-bg: var(--nfe-action-accent-hover); }
+.btn--accent:active { --btn-bg: var(--nfe-action-accent-pressed); --btn-fg: var(--nfe-text-on-action-strong); }
+
+.btn--secondary { --btn-bg: var(--nfe-action-secondary); --btn-fg: var(--nfe-action-secondary-text); }
+.btn--secondary:hover { --btn-bg: var(--nfe-action-secondary-hover); }
+.btn--secondary:active { --btn-bg: var(--nfe-action-secondary-pressed); --btn-fg: var(--nfe-action-secondary-text); }
+
+.btn--outline { --btn-bg: transparent; --btn-fg: var(--nfe-text-primary); --btn-border: var(--nfe-border-strong); }
+.btn--outline:hover { --btn-bg: var(--nfe-bg-subtle); }
+.btn--outline:active { --btn-bg: var(--nfe-bg-subtle); --btn-fg: var(--nfe-text-primary); }
+
+.btn--link {
+  --btn-bg: transparent;
+  --btn-fg: var(--nfe-text-link);
+  min-height: 0;
+  padding: var(--space-1) 0;
+  border: 0;
+  font: var(--type-link-l);
+  letter-spacing: 0;
+  text-transform: none;
+}
+.btn--link.btn--m { font: var(--type-link-m); }
+.btn--link:hover { --btn-bg: transparent; --btn-fg: var(--nfe-text-link-hover); }
+.btn--link:active { --btn-bg: transparent; --btn-fg: var(--nfe-text-link-hover); }
+
+.btn .btn__arrow { width: 1em; height: 1em; flex: none; }
+
+.btn[disabled],
+.btn[aria-disabled="true"] {
+  --btn-bg: var(--nfe-action-disabled);
+  --btn-fg: var(--nfe-action-disabled-text);
+  --btn-border: transparent;
+  cursor: not-allowed;
+}
+.btn--link[disabled], .btn--link[aria-disabled="true"] { --btn-bg: transparent; }
+
+.btn[aria-busy="true"] { cursor: progress; }
+.btn[aria-busy="true"] .btn__arrow { display: none; }
+.btn[aria-busy="true"]::before {
+  content: "";
+  width: 1em;
+  height: 1em;
+  border: 2px solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  animation: nfe-spin 0.8s linear infinite;
+}
+@keyframes nfe-spin { to { transform: rotate(360deg); } }
+
+/* Campo de texto e seleção ------------------------------------------------ */
+.field { display: grid; gap: var(--space-2); }
+.field__label { font: var(--type-label); color: var(--nfe-text-primary); }
+.field__optional { font: var(--type-caption); color: var(--nfe-text-muted); margin-left: var(--space-1); }
+.field__help { font: var(--type-caption); color: var(--nfe-text-muted); }
+.field__error { font: var(--type-caption); color: var(--nfe-feedback-error-text); }
+
+.input,
+.select {
+  width: 100%;
+  min-height: 48px;
+  padding: var(--space-3) var(--space-4);
+  border: 1px solid var(--nfe-border-control);
+  border-radius: var(--radius-md);
+  background: var(--nfe-bg-raised);
+  color: var(--nfe-text-primary);
+  font: var(--type-input);
+}
+.input::placeholder { color: var(--nfe-text-muted); }
+.input:disabled, .select:disabled { background: var(--nfe-action-disabled); color: var(--nfe-action-disabled-text); border-color: transparent; }
+.input[aria-invalid="true"], .select[aria-invalid="true"] { border-color: var(--nfe-feedback-error); }
+.select {
+  appearance: none;
+  padding-right: var(--space-10);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1.5 6 6.5l5-5' fill='none' stroke='%2374899a' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right var(--space-4) center;
+}
+
+/* Checkbox ----------------------------------------------------------------- */
+.checkbox { display: inline-flex; align-items: flex-start; gap: var(--space-3); font: var(--type-body-s); color: var(--nfe-text-secondary); cursor: pointer; }
+.checkbox input { width: 20px; height: 20px; margin: 2px 0 0; accent-color: var(--nfe-action-primary); flex: none; }
+
+/* Badge ------------------------------------------------------------------------ */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-full);
+  background: var(--nfe-bg-subtle);
+  color: var(--nfe-text-primary);
+  font: var(--type-label);
+  font-size: 13px;
+}
+.badge--brand { background: color-mix(in srgb, var(--nfe-cyan-400) 14%, transparent); }
+.badge--success { background: var(--nfe-feedback-success-bg); color: var(--nfe-feedback-success-text); }
+.badge--error { background: var(--nfe-feedback-error-bg); color: var(--nfe-feedback-error-text); }
+.badge--strong { background: var(--nfe-action-primary-pressed); color: var(--nfe-text-on-action-strong); }
+
+/* Alerta ---------------------------------------------------------------------- */
+.alert {
+  display: flex;
+  gap: var(--space-3);
+  padding: var(--space-4) var(--space-5);
+  border: 1px solid var(--nfe-border-default);
+  border-radius: var(--radius-md);
+  background: var(--nfe-bg-surface);
+}
+.alert__icon {
+  display: inline-grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  flex: none;
+  background: var(--nfe-neutro-200);
+  color: var(--nfe-neutro-900);
+  font: 700 13px/1 var(--nfe-font-secondary);
+}
+.alert__title { font: var(--type-label); }
+.alert__text { font: var(--type-caption); color: var(--nfe-text-secondary); }
+.alert--success { border-color: var(--nfe-feedback-success); background: var(--nfe-feedback-success-bg); }
+.alert--success .alert__icon { background: var(--nfe-feedback-success); }
+.alert--success .alert__title { color: var(--nfe-feedback-success-text); }
+.alert--error { border-color: var(--nfe-feedback-error); background: var(--nfe-feedback-error-bg); }
+.alert--error .alert__icon { background: var(--nfe-feedback-error); }
+.alert--error .alert__title { color: var(--nfe-feedback-error-text); }
+
+/* Card ------------------------------------------------------------------------- */
+.card {
+  padding: var(--space-8);
+  border: 1px solid var(--nfe-border-default);
+  border-radius: var(--radius-lg);
+  background: var(--nfe-bg-raised);
+}
+.card--interactive { transition: border-color 0.15s ease, box-shadow 0.15s ease; }
+.card--interactive:hover { border-color: var(--nfe-border-strong); box-shadow: var(--shadow-md); }
+
+/* Card de vidro: sempre sobre foto, nunca sobre fundo chapado.
+   Parte do card fica sobre a foto e parte fora, sem cobrir o rosto. */
+.card--glass {
+  padding: var(--space-5);
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  border-radius: var(--radius-lg);
+  background: rgba(255, 255, 255, 0.55);
+  box-shadow: var(--shadow-md);
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  backdrop-filter: blur(var(--glass-blur));
+}
+
+/* Métrica ---------------------------------------------------------------------- */
+.metric { display: grid; gap: var(--space-1); }
+.metric__value { font: var(--type-h1); letter-spacing: var(--tracking-h1); color: var(--nfe-highlight-primary); }
+.metric__label { font: var(--type-body-s); color: var(--nfe-text-secondary); }
+
+/* Sobretítulo com régua ------------------------------------------------------- */
+.overline { display: inline-flex; align-items: center; gap: var(--space-3); }
+.overline::before { content: ""; width: 32px; height: 3px; border-radius: 2px; background: var(--nfe-brand-verde); }
+
+/* Régua verde chapada sob títulos ---------------------------------------------- */
+.rule { width: 96px; height: 6px; border: 0; border-radius: 3px; background: var(--nfe-brand-verde); margin: 0; }
+
+/* Malha --------------------------------------------------------------------------
+   Elemento gráfico de assinatura. Sempre no degradê da marca, em um dos cantos,
+   superior ou inferior, ultrapassando os limites do formato, sem mostrar as
+   extremidades e sem sobrepor texto. Pode ser espelhada horizontalmente.
+   O elemento-pai recebe a classe .has-mesh. */
+/* Posições validadas para formatos 16:9 (slides e banners). Em outros
+   formatos, ajustar --mesh-width e conferir se nenhuma ponta fica visível.
+   Nos cantos esquerdo superior e direito inferior, a malha já vem espelhada. */
+.mesh {
+  position: absolute;
+  z-index: -1;
+  width: var(--mesh-width, 135.4%);
+  aspect-ratio: 2519 / 1419;
+  background: url("assets/wave-pattern.png") no-repeat center / contain;
+  opacity: var(--nfe-mesh-opacity);
+  pointer-events: none;
+}
+.mesh--tr { left: 42.7%; top: -51.9%; }
+.mesh--tl { left: -78.1%; top: -51.9%; transform: scaleX(-1); }
+.mesh--bl { left: -36.5%; top: 42.6%; }
+.mesh--br { left: 1%; top: 42.6%; transform: scaleX(-1); }
+.mesh--cover { opacity: 0.42; } /* capa e contracapa em fundo escuro */
+.has-mesh { position: relative; overflow: hidden; isolation: isolate; }
+
+/* Logotipo ---------------------------------------------------------------------
+   Versão preferencial: colorida em degradê, sobre fundo claro ou teal profundo.
+   Área de proteção: altura do logotipo em todos os lados. Mínimo digital: 100 px.
+   Símbolo (assets/mark-color.svg): favicon e espaços reduzidos. Mínimo: 16 px. */
+.logo { display: inline-block; width: 160px; min-width: 100px; height: auto; }
+
+/* 09. Acessibilidade -------------------------------------------------------------- */
+:focus-visible { outline: 2px solid var(--nfe-focus-ring); outline-offset: 2px; }
+
+.sr-only {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
