@@ -6,15 +6,18 @@ Este repositório contém os arquivos de identidade de marca, incluindo wallpape
 
 | Preview | Descrição |
 |---------|-----------|
-| ![Wallpaper OB V2](wallpaper/wallpaper-obs-v2.jpg) | [Wallpaper OB V2 (GVDesign)](wallpaper/wallpaper-ob-v2.gvdesign.gz) |
-| ![Wallpaper OBS V2](wallpaper/wallpaper-obs-v2.jpg) | [Wallpaper OBS V2](wallpaper/wallpaper-obs-v2.jpg) |
-| ![Wallpaper V2](wallpaper/wallpaper-v2.jpg) | [Wallpaper V2 (GVDesign)](wallpaper/wallpaper-v2.gvdesign.gz) |
-| ![Wallpaper V2](wallpaper/wallpaper-v2.jpg) | [Wallpaper V2 (JPG)](wallpaper/wallpaper-v2.jpg) |
-| ![Wallpaper V2](wallpaper/wallpaper-v2.png) | [Wallpaper V2 (PNG)](wallpaper/wallpaper-v2.png) |
-| ![Wallpaper V3](wallpaper/wallpaper-v3.jpg) | [Wallpaper V3 (JPG)](wallpaper/wallpaper-v3.jpg) |
-| ![Wallpaper V3](wallpaper/wallpaper-v3.png) | [Wallpaper V3 (PNG)](wallpaper/wallpaper-v3.png) |
-| ![Wallpaper](wallpaper/wallpaper.png) | [Wallpaper (GVDesign)](wallpaper/wallpaper.gvdesign.gz) |
-| ![Wallpaper](wallpaper/wallpaper.png) | [Wallpaper (PNG)](wallpaper/wallpaper.png) |
+| ![Teams 01 Escuro 1920x1080](wallpaper/nfeio-teams-01-escuro-1920x1080.png) | [Teams 01 Escuro 1920x1080 (PNG)](wallpaper/nfeio-teams-01-escuro-1920x1080.png) |
+| ![Teams 02 Claro 1920x1080](wallpaper/nfeio-teams-02-claro-1920x1080.png) | [Teams 02 Claro 1920x1080 (PNG)](wallpaper/nfeio-teams-02-claro-1920x1080.png) |
+| ![Teams 03 Teal base frase 1920x1080](wallpaper/nfeio-teams-03-teal-base-frase-1920x1080.png) | [Teams 03 Teal base frase 1920x1080 (PNG)](wallpaper/nfeio-teams-03-teal-base-frase-1920x1080.png) |
+| ![Teams 04 Branco frase 1920x1080](wallpaper/nfeio-teams-04-branco-frase-1920x1080.png) | [Teams 04 Branco frase 1920x1080 (PNG)](wallpaper/nfeio-teams-04-branco-frase-1920x1080.png) |
+| ![Teams 05 Escuro textura 1920x1080](wallpaper/nfeio-teams-05-escuro-textura-1920x1080.png) | [Teams 05 Escuro textura 1920x1080 (PNG)](wallpaper/nfeio-teams-05-escuro-textura-1920x1080.png) |
+| ![Teams 06 Claro textura 1920x1080](wallpaper/nfeio-teams-06-claro-textura-1920x1080.png) | [Teams 06 Claro textura 1920x1080 (PNG)](wallpaper/nfeio-teams-06-claro-textura-1920x1080.png) |
+| ![Wallpaper 01 Escuro 2560x1440](wallpaper/nfeio-wallpaper-01-escuro-2560x1440.png) | [Wallpaper 01 Escuro 2560x1440 (PNG)](wallpaper/nfeio-wallpaper-01-escuro-2560x1440.png) |
+| ![Wallpaper 02 Claro 2560x1440](wallpaper/nfeio-wallpaper-02-claro-2560x1440.png) | [Wallpaper 02 Claro 2560x1440 (PNG)](wallpaper/nfeio-wallpaper-02-claro-2560x1440.png) |
+| ![Wallpaper 03 Teal base frase 2560x1440](wallpaper/nfeio-wallpaper-03-teal-base-frase-2560x1440.png) | [Wallpaper 03 Teal base frase 2560x1440 (PNG)](wallpaper/nfeio-wallpaper-03-teal-base-frase-2560x1440.png) |
+| ![Wallpaper 04 Branco frase 2560x1440](wallpaper/nfeio-wallpaper-04-branco-frase-2560x1440.png) | [Wallpaper 04 Branco frase 2560x1440 (PNG)](wallpaper/nfeio-wallpaper-04-branco-frase-2560x1440.png) |
+| ![Wallpaper 05 Escuro textura 2560x1440](wallpaper/nfeio-wallpaper-05-escuro-textura-2560x1440.png) | [Wallpaper 05 Escuro textura 2560x1440 (PNG)](wallpaper/nfeio-wallpaper-05-escuro-textura-2560x1440.png) |
+| ![Wallpaper 06 Claro textura 2560x1440](wallpaper/nfeio-wallpaper-06-claro-textura-2560x1440.png) | [Wallpaper 06 Claro textura 2560x1440 (PNG)](wallpaper/nfeio-wallpaper-06-claro-textura-2560x1440.png) |
 
 ### Outros Elementos
 

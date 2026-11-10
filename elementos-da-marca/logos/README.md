@@ -16,7 +16,6 @@ Aqui você encontra os arquivos de identidade de marca. Utilize os links abaixo 
 | ![Logo Tiny Quadrado Fundo Branco (JPEG)](logo-tiny-quadrado-fundo-branco.jpeg) | [Logo Tiny Quadrado Fundo Branco (JPEG)](logo-tiny-quadrado-fundo-branco.jpeg) |
 
 Outros formatos:
-- [Logo Branco Transparente (GVDesign)](logo-branco-transparente.gvdesign)
 - [Logo Quadrado Branco Transparente (SVG)](logo-quadrado-branco-transparente.svg)
-- [Logo Quadrado Transparente (GVDesign)](logo-quadrado-transparente.gvdesign.gz)
 - [Logo Quadrado Transparente (SVG)](logo-quadrado-transparente.svg)
+- [Logo Símbolo BIMI (SVG Tiny P/S, viewBox quadrado)](logo-simbolo-bimi.svg)
