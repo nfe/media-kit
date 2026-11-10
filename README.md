@@ -30,12 +30,18 @@ Arquivos do sistema de identidade visual da NFE.io. Fonte: Manual de Identidade 
 
 | Preview | Formato | Link |
 |---------|---------|------|
-| ![Wallpaper OBS V2](elementos-da-marca/wallpaper/wallpaper-obs-v2.jpg) | JPG | <a href="elementos-da-marca/wallpaper/wallpaper-obs-v2.jpg" download target="_blank">Wallpaper OBS V2</a> |
-| ![Wallpaper V2 (JPG)](elementos-da-marca/wallpaper/wallpaper-v2.jpg) | JPG | <a href="elementos-da-marca/wallpaper/wallpaper-v2.jpg" download target="_blank">Wallpaper V2 (JPG)</a> |
-| ![Wallpaper V2 (PNG)](elementos-da-marca/wallpaper/wallpaper-v2.png) | PNG | <a href="elementos-da-marca/wallpaper/wallpaper-v2.png" download target="_blank">Wallpaper V2 (PNG)</a> |
-| ![Wallpaper V3 (JPG)](elementos-da-marca/wallpaper/wallpaper-v3.jpg) | JPG | <a href="elementos-da-marca/wallpaper/wallpaper-v3.jpg" download target="_blank">Wallpaper V3 (JPG)</a> |
-| ![Wallpaper V3 (PNG)](elementos-da-marca/wallpaper/wallpaper-v3.png) | PNG | <a href="elementos-da-marca/wallpaper/wallpaper-v3.png" download target="_blank">Wallpaper V3 (PNG)</a> |
-| ![Wallpaper (PNG)](elementos-da-marca/wallpaper/wallpaper.png) | PNG | <a href="elementos-da-marca/wallpaper/wallpaper.png" download target="_blank">Wallpaper (PNG)</a> |
+| ![Teams 01 Escuro 1920x1080](elementos-da-marca/wallpaper/nfeio-teams-01-escuro-1920x1080.png) | PNG | <a href="elementos-da-marca/wallpaper/nfeio-teams-01-escuro-1920x1080.png" download target="_blank">Teams 01 Escuro 1920x1080</a> |
+| ![Teams 02 Claro 1920x1080](elementos-da-marca/wallpaper/nfeio-teams-02-claro-1920x1080.png) | PNG | <a href="elementos-da-marca/wallpaper/nfeio-teams-02-claro-1920x1080.png" download target="_blank">Teams 02 Claro 1920x1080</a> |
+| ![Teams 03 Teal base frase 1920x1080](elementos-da-marca/wallpaper/nfeio-teams-03-teal-base-frase-1920x1080.png) | PNG | <a href="elementos-da-marca/wallpaper/nfeio-teams-03-teal-base-frase-1920x1080.png" download target="_blank">Teams 03 Teal base frase 1920x1080</a> |
+| ![Teams 04 Branco frase 1920x1080](elementos-da-marca/wallpaper/nfeio-teams-04-branco-frase-1920x1080.png) | PNG | <a href="elementos-da-marca/wallpaper/nfeio-teams-04-branco-frase-1920x1080.png" download target="_blank">Teams 04 Branco frase 1920x1080</a> |
+| ![Teams 05 Escuro textura 1920x1080](elementos-da-marca/wallpaper/nfeio-teams-05-escuro-textura-1920x1080.png) | PNG | <a href="elementos-da-marca/wallpaper/nfeio-teams-05-escuro-textura-1920x1080.png" download target="_blank">Teams 05 Escuro textura 1920x1080</a> |
+| ![Teams 06 Claro textura 1920x1080](elementos-da-marca/wallpaper/nfeio-teams-06-claro-textura-1920x1080.png) | PNG | <a href="elementos-da-marca/wallpaper/nfeio-teams-06-claro-textura-1920x1080.png" download target="_blank">Teams 06 Claro textura 1920x1080</a> |
+| ![Wallpaper 01 Escuro 2560x1440](elementos-da-marca/wallpaper/nfeio-wallpaper-01-escuro-2560x1440.png) | PNG | <a href="elementos-da-marca/wallpaper/nfeio-wallpaper-01-escuro-2560x1440.png" download target="_blank">Wallpaper 01 Escuro 2560x1440</a> |
+| ![Wallpaper 02 Claro 2560x1440](elementos-da-marca/wallpaper/nfeio-wallpaper-02-claro-2560x1440.png) | PNG | <a href="elementos-da-marca/wallpaper/nfeio-wallpaper-02-claro-2560x1440.png" download target="_blank">Wallpaper 02 Claro 2560x1440</a> |
+| ![Wallpaper 03 Teal base frase 2560x1440](elementos-da-marca/wallpaper/nfeio-wallpaper-03-teal-base-frase-2560x1440.png) | PNG | <a href="elementos-da-marca/wallpaper/nfeio-wallpaper-03-teal-base-frase-2560x1440.png" download target="_blank">Wallpaper 03 Teal base frase 2560x1440</a> |
+| ![Wallpaper 04 Branco frase 2560x1440](elementos-da-marca/wallpaper/nfeio-wallpaper-04-branco-frase-2560x1440.png) | PNG | <a href="elementos-da-marca/wallpaper/nfeio-wallpaper-04-branco-frase-2560x1440.png" download target="_blank">Wallpaper 04 Branco frase 2560x1440</a> |
+| ![Wallpaper 05 Escuro textura 2560x1440](elementos-da-marca/wallpaper/nfeio-wallpaper-05-escuro-textura-2560x1440.png) | PNG | <a href="elementos-da-marca/wallpaper/nfeio-wallpaper-05-escuro-textura-2560x1440.png" download target="_blank">Wallpaper 05 Escuro textura 2560x1440</a> |
+| ![Wallpaper 06 Claro textura 2560x1440](elementos-da-marca/wallpaper/nfeio-wallpaper-06-claro-textura-2560x1440.png) | PNG | <a href="elementos-da-marca/wallpaper/nfeio-wallpaper-06-claro-textura-2560x1440.png" download target="_blank">Wallpaper 06 Claro textura 2560x1440</a> |
 
 ### Outros Elementos
 
